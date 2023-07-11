@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Dias Habiles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="Mozzi">Mozzi</h1>
+ <div class="content">
+    <h1 id="Titulo">calculador de fechas y dias habiles</h1>
+    <table>
+        <tbody class="fecha">
+            <tr>
+                <td class="textoTable"><u>Fecha inicial:</u></td>
+                <label for="fechaDeInicio"></label>
+                <td> <input type="date" id="fechaDeInicio" title="ingresa tu fecha de partida"> </td>
+            </tr>
+            <tr class="dias">
+                <td class="textoTable"><u>Cant. dias habiles:</u></td>
+                <td> <input type="number" id="diasHabiles" placeholder="dias habiles"></td>
+            </tr>
+            </tr>
+            
+            <tr id="resultFechaLimiteContenedor">
+                <td class="textoTable"><u>Fecha limite:</u></td>
+                <td><text id="resultFechaLimite"></text></td>
+            </tr>
+        </tbody>
+    </table>
+        
+    <button type="submit" class="boton">conoce tu fecha limite</button>
+            
+    <div id="displayFeriados">
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
