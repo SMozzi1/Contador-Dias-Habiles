@@ -24,13 +24,17 @@ body{
     height: 500px;
     width: 500px;
     justify-content: space-evenly;
+    align-items: center;
     opacity: 0%;
     animation-name: aparecerBody;
     animation-duration: 3s;
     animation-delay: 5s;
     animation-fill-mode: forwards;
 }
-
+#titulo{
+    margin: 0px;
+    padding: 0px;
+}
 table{
     width: 100%;
     height: 30%;
@@ -39,7 +43,8 @@ table{
 }
 
 tbody{
-    width: 50%;
+    font-size: 20px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -51,16 +56,12 @@ tr{
     justify-content: space-between;
 }
 
-#diasHabiles{
-    color: #ffffff;
-    background-color: black;
-    border: 1px solid white;
-    border-radius: 10px;
-    width: 80px;
+.fechaInicial{
+    width: 250px;
 }
 
-.textoTable{
-    font-size: 20px;
+.dias{
+    width: 250px;
 }
 
 #fechaDeInicio{
@@ -69,6 +70,58 @@ tr{
     border: 1px solid white;
     border-radius: 10px;
     padding: 6px;
+}
+
+.container{
+    border: 1px solid white;
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 200px;
+    
+}
+
+input[type="number"]{
+    width: 40px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+}
+#decrement{
+    color: #ffffff;
+    border: none;
+    background-color: #000000;
+    font-size: 15px;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#increment{
+    color: #ffffff;
+    border: none;
+    background-color: #000000;
+    font-size: 15px;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.boton{
+    color: #ffffff;
+    width: 500px;
+    background-color: #000000;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
 }
 ::-webkit-calendar-picker-indicator{
     background-color: #ffffff;

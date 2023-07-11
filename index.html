@@ -7,19 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="Mozzi">Mozzi</h1>
+    <label for="fechaDeInicio" for="my-input"></label>
+    <h1 id="Mozzi">Mozzi Home</h1>
  <div class="content">
-    <h1 id="Titulo">calculador de fechas y dias habiles</h1>
+    <h1 id="titulo">calculador de fechas y dias habiles</h1>
     <table>
         <tbody class="fecha">
-            <tr>
+            <tr class="fechaInicial">
                 <td class="textoTable"><u>Fecha inicial:</u></td>
-                <label for="fechaDeInicio"></label>
                 <td> <input type="date" id="fechaDeInicio" title="ingresa tu fecha de partida"> </td>
             </tr>
             <tr class="dias">
                 <td class="textoTable"><u>Cant. dias habiles:</u></td>
-                <td> <input type="number" id="diasHabiles" placeholder="dias habiles"></td>
+                <td> 
+                    <div class="container">
+                    <button id="decrement" onclick="stepper(this)"> - </button>
+                    <input type="number" min="0" max="999" step="1" value="15" id="my-input" readonly title="ingresa la cantidad de dias habiles deseada">
+                    <button id="increment" onclick="stepper(this)"> + </button>
+                    </div>
+                </td>
             </tr>
             </tr>
             
