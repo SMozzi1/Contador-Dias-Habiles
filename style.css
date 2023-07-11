@@ -164,9 +164,12 @@ input::-webkit-inner-spin-button{
         height: 80%;
         width: 80%;
         font-size: 16px;
+        display: flex;
     }
     #titulo{
-        width: 100%;
+        display: inline-block;
+        justify-content: center;
+        width: auto;
         font-size: 18px;
     }
     td{
